@@ -1,0 +1,14 @@
+# Backend runtime + ML inference dependencies
+fastapi>=0.141
+uvicorn[standard]>=0.34
+pydantic>=2.11
+pydantic-settings>=2.7
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.6
+joblib>=1.4
+xgboost>=2.1
+
+# Testing
+pytest>=8.3
+httpx>=0.28

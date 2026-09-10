@@ -1,0 +1,23 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Node / frontend
+**/node_modules/
+**/dist/
+*.local
+
+# Local environment config (only the .env.example templates are committed)
+.env
+**/.env
+
+# Editors / OS
+.vscode/
+.DS_Store
+
+# Local SQLite build
+*.db

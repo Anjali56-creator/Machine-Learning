@@ -1,0 +1,93 @@
+/*
+ * Design tokens for Attrition Intelligence.
+ *
+ * Palette translated from the reference swatches: bright lilac / light purple,
+ * pink & salmon, light red / red-orange, mandarin & radiant yellow, wintergreen,
+ * hammam turquoise, neon/spiro cyan, light slate & indigo, dark slate.
+ *
+ * Rule of use: dark navy-indigo surfaces carry the UI; the bright hues appear
+ * only as strategic accents (identity, risk, chart series, insight cues).
+ * Change a value here and the whole product follows.
+ */
+:root {
+  /* ---------- Base: dark navy-charcoal with a faint indigo cast ---------- */
+  --bg: #0a0b13;
+  --bg-grad-1: #0d0e1c;
+  --bg-grad-2: #090a11;
+  --surface: #14151f;
+  --surface-raised: #191a27;
+  --surface-inset: #101019;
+  --surface-hover: #20212f;
+  --border: #282a3c;
+  --border-soft: #1f2130;
+  --border-strong: #363954;
+
+  /* ---------- Text ---------- */
+  --text: #f3f4fa;
+  --text-secondary: #b3b7cb;
+  --text-muted: #888da8;
+  --text-faint: #5c6079;
+
+  /* ---------- Reference-palette accent ramp ---------- */
+  --accent-purple: #a86cf0; /* light purple  -> primary brand */
+  --accent-lilac: #c78ef2; /* bright lilac  -> brand highlight */
+  --accent-indigo: #6d6bf2; /* light indigo  -> supporting category */
+  --accent-blue: #5b8def; /* light slate   -> workforce / count data */
+  --accent-cyan: #1fc7f0; /* neon / spiro  -> secondary analytics */
+  --accent-turquoise: #4bd7c9; /* hammam blue   -> positive-neutral */
+  --accent-green: #35d986; /* wintergreen   -> low risk / retention */
+  --accent-yellow: #ffc73a; /* radiant yellow-> compensation / attention */
+  --accent-orange: #f7a24a; /* mandarin      -> medium risk / overtime */
+  --accent-salmon: #f79a94; /* young salmon   -> soft attrition */
+  --accent-pink: #f57ba8; /* pink          -> attrition rate */
+  --accent-coral: #ff5d63; /* light red     -> employees left / high risk */
+  --accent-red: #f5453b; /* red-orange    -> critical */
+
+  /* Soft washes (12-16% alpha) for tinted backgrounds / borders */
+  --accent-purple-soft: rgba(168, 108, 240, 0.15);
+  --accent-blue-soft: rgba(91, 141, 239, 0.15);
+  --accent-cyan-soft: rgba(31, 199, 240, 0.14);
+  --accent-green-soft: rgba(53, 217, 134, 0.14);
+  --accent-yellow-soft: rgba(255, 199, 58, 0.15);
+  --accent-orange-soft: rgba(247, 162, 74, 0.15);
+  --accent-pink-soft: rgba(245, 123, 168, 0.15);
+  --accent-coral-soft: rgba(255, 93, 99, 0.15);
+  --accent-indigo-soft: rgba(109, 107, 242, 0.15);
+
+  /* ---------- Primary interactive accent (brand) ---------- */
+  --accent: var(--accent-purple);
+  --accent-bright: var(--accent-lilac);
+  --accent-soft: var(--accent-purple-soft);
+  --accent-line: rgba(168, 108, 240, 0.34);
+
+  /* ---------- Semantic risk (Predict, risk KPIs, insights) ---------- */
+  --risk-low: var(--accent-green);
+  --risk-low-soft: var(--accent-green-soft);
+  --risk-med: var(--accent-orange);
+  --risk-med-soft: var(--accent-orange-soft);
+  --risk-high: var(--accent-coral);
+  --risk-high-soft: var(--accent-coral-soft);
+
+  /* ---------- Chart series (consistent mapping) ---------- */
+  --chart-count: var(--accent-blue); /* employee count bars */
+  --chart-rate: var(--accent-coral); /* attrition-rate line / bars */
+  --chart-purple: var(--accent-purple);
+  --chart-cyan: var(--accent-cyan);
+  --chart-neutral: #3b3f55;
+  --chart-track: #262a3d;
+  --chart-grid: #1c1e2c;
+  --chart-axis: #7b8099;
+
+  /* ---------- Layout ---------- */
+  --sidebar-w: 220px;
+  --header-h: 56px;
+  --radius-lg: 12px;
+  --radius: 9px;
+  --radius-sm: 6px;
+  --gap: 16px;
+  --content-max: 1560px;
+
+  --font: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.02) inset, 0 8px 24px -12px rgba(0, 0, 0, 0.6);
+  --shadow-pop: 0 12px 40px -8px rgba(0, 0, 0, 0.7);
+}
